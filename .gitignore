@@ -417,4 +417,4 @@ $RECYCLE.BIN/
 
 # dont version videos
 *.avi
-raw_videos/*
+raw_frames/*
