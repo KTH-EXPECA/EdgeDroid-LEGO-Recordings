@@ -1,0 +1,1687 @@
+initial:
+  frame: 370
+  run_id: 137299
+num_steps: 169
+steps:
+  0:
+    blank:
+      frame: 559
+      run_id: 136906
+    low_confidence:
+      frame: 39961
+      run_id: 134470
+    success:
+      frame: 37497
+      run_id: 135199
+  1:
+    blank:
+      frame: 3247
+      run_id: 136144
+    low_confidence:
+      frame: 6071
+      run_id: 134584
+    success:
+      frame: 945
+      run_id: 134584
+  2:
+    blank:
+      frame: 5365
+      run_id: 135715
+    low_confidence:
+      frame: 33010
+      run_id: 135199
+    success:
+      frame: 5854
+      run_id: 134584
+  3:
+    blank:
+      frame: 943
+      run_id: 135391
+    low_confidence:
+      frame: 26918
+      run_id: 135955
+    success:
+      frame: 554
+      run_id: 134614
+  4:
+    blank:
+      frame: 1673
+      run_id: 136894
+    low_confidence:
+      frame: 4443
+      run_id: 136522
+    success:
+      frame: 1263
+      run_id: 136354
+  5:
+    blank:
+      frame: 1069
+      run_id: 136906
+    low_confidence:
+      frame: 36234
+      run_id: 137344
+    success:
+      frame: 28515
+      run_id: 134614
+  6:
+    blank:
+      frame: 34710
+      run_id: 137353
+    low_confidence:
+      frame: 25327
+      run_id: 134797
+    success:
+      frame: 6271
+      run_id: 135241
+  7:
+    blank:
+      frame: 1988
+      run_id: 135769
+    low_confidence:
+      frame: 30858
+      run_id: 136060
+    success:
+      frame: 3246
+      run_id: 135301
+  8:
+    blank:
+      frame: 775
+      run_id: 134797
+    low_confidence:
+      frame: 1737
+      run_id: 136894
+    success:
+      frame: 18644
+      run_id: 134710
+  9:
+    blank:
+      frame: 31054
+      run_id: 136522
+    low_confidence:
+      frame: 22512
+      run_id: 136780
+    success:
+      frame: 11680
+      run_id: 135352
+  10:
+    blank:
+      frame: 9114
+      run_id: 136906
+    low_confidence:
+      frame: 36252
+      run_id: 134716
+    success:
+      frame: 7048
+      run_id: 136894
+  11:
+    blank:
+      frame: 1989
+      run_id: 135955
+    low_confidence:
+      frame: 1863
+      run_id: 134470
+    success:
+      frame: 28337
+      run_id: 135391
+  12:
+    blank:
+      frame: 2254
+      run_id: 136987
+    low_confidence:
+      frame: 1685
+      run_id: 136516
+    success:
+      frame: 3162
+      run_id: 136354
+  13:
+    blank:
+      frame: 28794
+      run_id: 135769
+    low_confidence:
+      frame: 32965
+      run_id: 136522
+    success:
+      frame: 1947
+      run_id: 136516
+  14:
+    blank:
+      frame: 26282
+      run_id: 136981
+    low_confidence:
+      frame: 7939
+      run_id: 136894
+    success:
+      frame: 29055
+      run_id: 135769
+  15:
+    blank:
+      frame: 28342
+      run_id: 137299
+    low_confidence:
+      frame: 2807
+      run_id: 134470
+    success:
+      frame: 37457
+      run_id: 134716
+  16:
+    blank:
+      frame: 3089
+      run_id: 135955
+    low_confidence:
+      frame: 4451
+      run_id: 136123
+    success:
+      frame: 28604
+      run_id: 137299
+  17:
+    blank:
+      frame: 5112
+      run_id: 135343
+    low_confidence:
+      frame: 26859
+      run_id: 136981
+    success:
+      frame: 5955
+      run_id: 136285
+  18:
+    blank:
+      frame: 31245
+      run_id: 134671
+    low_confidence:
+      frame: 29946
+      run_id: 135769
+    success:
+      frame: 6164
+      run_id: 136285
+  19:
+    blank:
+      frame: 11261
+      run_id: 136906
+    low_confidence:
+      frame: 30809
+      run_id: 134623
+    success:
+      frame: 3664
+      run_id: 135955
+  20:
+    blank:
+      frame: 40603
+      run_id: 136354
+    low_confidence:
+      frame: 25466
+      run_id: 136930
+    success:
+      frame: 34158
+      run_id: 135352
+  21:
+    blank:
+      frame: 26137
+      run_id: 135199
+    low_confidence:
+      frame: 25429
+      run_id: 135391
+    success:
+      frame: 9668
+      run_id: 136894
+  22:
+    blank:
+      frame: 9713
+      run_id: 137344
+    low_confidence:
+      frame: 10316
+      run_id: 135352
+    success:
+      frame: 9752
+      run_id: 137344
+  23:
+    blank:
+      frame: 25944
+      run_id: 135769
+    low_confidence:
+      frame: 23624
+      run_id: 135385
+    success:
+      frame: 25591
+      run_id: 135391
+  24:
+    blank:
+      frame: 31878
+      run_id: 135670
+    low_confidence:
+      frame: 7712
+      run_id: 135385
+    success:
+      frame: 18128
+      run_id: 135199
+  25:
+    blank:
+      frame: 26539
+      run_id: 134623
+    low_confidence:
+      frame: 13041
+      run_id: 136906
+    success:
+      frame: 24503
+      run_id: 135385
+  26:
+    blank:
+      frame: 17265
+      run_id: 136894
+    low_confidence:
+      frame: 13409
+      run_id: 135715
+    success:
+      frame: 18820
+      run_id: 134470
+  27:
+    blank:
+      frame: 26975
+      run_id: 134623
+    low_confidence:
+      frame: 25938
+      run_id: 137299
+    success:
+      frame: 10820
+      run_id: 136519
+  28:
+    blank:
+      frame: 30573
+      run_id: 137353
+    low_confidence:
+      frame: 27344
+      run_id: 135199
+    success:
+      frame: 24265
+      run_id: 136981
+  29:
+    blank:
+      frame: 10813
+      run_id: 135715
+    low_confidence:
+      frame: 22695
+      run_id: 134146
+    success:
+      frame: 22735
+      run_id: 134146
+  30:
+    blank:
+      frame: 14353
+      run_id: 136906
+    success:
+      frame: 27217
+      run_id: 136060
+  31:
+    blank:
+      frame: 5281
+      run_id: 136516
+    low_confidence:
+      frame: 13955
+      run_id: 135343
+    success:
+      frame: 14162
+      run_id: 136123
+  32:
+    blank:
+      frame: 32057
+      run_id: 136123
+    low_confidence:
+      frame: 34015
+      run_id: 135769
+    success:
+      frame: 11973
+      run_id: 134716
+  33:
+    blank:
+      frame: 30215
+      run_id: 136906
+    low_confidence:
+      frame: 8864
+      run_id: 136354
+    success:
+      frame: 21947
+      run_id: 136144
+  34:
+    blank:
+      frame: 26876
+      run_id: 136522
+    low_confidence:
+      frame: 8051
+      run_id: 136987
+    success:
+      frame: 19625
+      run_id: 134146
+  35:
+    blank:
+      frame: 9801
+      run_id: 135670
+    low_confidence:
+      frame: 9780
+      run_id: 135343
+    success:
+      frame: 31612
+      run_id: 134716
+  36:
+    blank:
+      frame: 10132
+      run_id: 135343
+    low_confidence:
+      frame: 7726
+      run_id: 134470
+    success:
+      frame: 24621
+      run_id: 135199
+  37:
+    blank:
+      frame: 25769
+      run_id: 136858
+    low_confidence:
+      frame: 6800
+      run_id: 135955
+    success:
+      frame: 10387
+      run_id: 136285
+  38:
+    blank:
+      frame: 13675
+      run_id: 134584
+    low_confidence:
+      frame: 27768
+      run_id: 136522
+    success:
+      frame: 21777
+      run_id: 136981
+  39:
+    blank:
+      frame: 12048
+      run_id: 136780
+    low_confidence:
+      frame: 9830
+      run_id: 136123
+    success:
+      frame: 10674
+      run_id: 135343
+  40:
+    blank:
+      frame: 10720
+      run_id: 135670
+    low_confidence:
+      frame: 25245
+      run_id: 135199
+    success:
+      frame: 16828
+      run_id: 136906
+  41:
+    blank:
+      frame: 20681
+      run_id: 134146
+    low_confidence:
+      frame: 14159
+      run_id: 136894
+    success:
+      frame: 24777
+      run_id: 137299
+  42:
+    blank:
+      frame: 25174
+      run_id: 136858
+    low_confidence:
+      frame: 8583
+      run_id: 136123
+    success:
+      frame: 23380
+      run_id: 135385
+  43:
+    blank:
+      frame: 24191
+      run_id: 137344
+    low_confidence:
+      frame: 12588
+      run_id: 136780
+    success:
+      frame: 10424
+      run_id: 134710
+  44:
+    blank:
+      frame: 36831
+      run_id: 137344
+    low_confidence:
+      frame: 11009
+      run_id: 134146
+    success:
+      frame: 17021
+      run_id: 135385
+  45:
+    blank:
+      frame: 20144
+      run_id: 137344
+    low_confidence:
+      frame: 10744
+      run_id: 136123
+    success:
+      frame: 22348
+      run_id: 137299
+  46:
+    blank:
+      frame: 20320
+      run_id: 137344
+    low_confidence:
+      frame: 20263
+      run_id: 135385
+    success:
+      frame: 24671
+      run_id: 136522
+  47:
+    blank:
+      frame: 22197
+      run_id: 135391
+    low_confidence:
+      frame: 12110
+      run_id: 135670
+    success:
+      frame: 22179
+      run_id: 135769
+  48:
+    blank:
+      frame: 8872
+      run_id: 134614
+    low_confidence:
+      frame: 15255
+      run_id: 136519
+    success:
+      frame: 9968
+      run_id: 136930
+  49:
+    blank:
+      frame: 12632
+      run_id: 136285
+    low_confidence:
+      frame: 12407
+      run_id: 136354
+    success:
+      frame: 12354
+      run_id: 135343
+  50:
+    blank:
+      frame: 9615
+      run_id: 136987
+    low_confidence:
+      frame: 18956
+      run_id: 136906
+    success:
+      frame: 24794
+      run_id: 135301
+  51:
+    blank:
+      frame: 21367
+      run_id: 137344
+    low_confidence:
+      frame: 11172
+      run_id: 134470
+    success:
+      frame: 23035
+      run_id: 135391
+  52:
+    blank:
+      frame: 517
+      run_id: 136780
+    low_confidence:
+      frame: 5094
+      run_id: 134614
+    success:
+      frame: 14512
+      run_id: 136516
+  53:
+    blank:
+      frame: 32785
+      run_id: 136780
+    low_confidence:
+      frame: 6071
+      run_id: 134584
+    success:
+      frame: 16723
+      run_id: 134146
+  54:
+    blank:
+      frame: 34456
+      run_id: 134623
+    low_confidence:
+      frame: 23040
+      run_id: 136060
+    success:
+      frame: 32124
+      run_id: 135769
+  55:
+    blank:
+      frame: 13341
+      run_id: 135343
+    low_confidence:
+      frame: 15243
+      run_id: 134614
+    success:
+      frame: 12310
+      run_id: 134470
+  56:
+    blank:
+      frame: 14879
+      run_id: 136780
+    low_confidence:
+      frame: 10604
+      run_id: 136987
+    success:
+      frame: 17704
+      run_id: 134797
+  57:
+    blank:
+      frame: 9893
+      run_id: 136516
+    low_confidence:
+      frame: 10565
+      run_id: 134614
+    success:
+      frame: 11526
+      run_id: 136930
+  58:
+    blank:
+      frame: 10835
+      run_id: 134614
+    low_confidence:
+      frame: 19797
+      run_id: 135352
+    success:
+      frame: 21464
+      run_id: 135391
+  59:
+    blank:
+      frame: 16116
+      run_id: 135715
+    low_confidence:
+      frame: 23093
+      run_id: 134671
+    success:
+      frame: 19999
+      run_id: 137344
+  60:
+    blank:
+      frame: 12448
+      run_id: 136984
+    low_confidence:
+      frame: 35099
+      run_id: 136060
+    success:
+      frame: 20441
+      run_id: 134623
+  61:
+    blank:
+      frame: 7972
+      run_id: 136123
+    low_confidence:
+      frame: 27533
+      run_id: 135391
+    success:
+      frame: 18474
+      run_id: 134623
+  62:
+    blank:
+      frame: 15181
+      run_id: 134146
+    low_confidence:
+      frame: 16294
+      run_id: 136984
+    success:
+      frame: 11637
+      run_id: 136987
+  63:
+    blank:
+      frame: 16794
+      run_id: 135715
+    success:
+      frame: 15494
+      run_id: 134146
+  64:
+    blank:
+      frame: 17011
+      run_id: 135715
+    low_confidence:
+      frame: 17470
+      run_id: 135352
+    success:
+      frame: 18623
+      run_id: 136060
+  65:
+    blank:
+      frame: 15188
+      run_id: 136123
+    low_confidence:
+      frame: 17156
+      run_id: 135715
+    success:
+      frame: 17759
+      run_id: 137344
+  66:
+    blank:
+      frame: 22478
+      run_id: 137353
+    low_confidence:
+      frame: 19055
+      run_id: 134584
+    success:
+      frame: 19753
+      run_id: 135199
+  67:
+    blank:
+      frame: 19329
+      run_id: 136519
+    low_confidence:
+      frame: 21199
+      run_id: 135301
+    success:
+      frame: 22767
+      run_id: 137353
+  68:
+    blank:
+      frame: 5851
+      run_id: 134716
+    low_confidence:
+      frame: 31136
+      run_id: 136060
+    success:
+      frame: 28537
+      run_id: 136906
+  69:
+    blank:
+      frame: 16353
+      run_id: 135343
+    low_confidence:
+      frame: 14680
+      run_id: 135385
+    success:
+      frame: 18083
+      run_id: 136780
+  70:
+    blank:
+      frame: 12407
+      run_id: 136516
+    low_confidence:
+      frame: 16450
+      run_id: 135274
+    success:
+      frame: 13728
+      run_id: 136987
+  71:
+    blank:
+      frame: 17190
+      run_id: 137299
+    low_confidence:
+      frame: 13856
+      run_id: 135955
+    success:
+      frame: 16148
+      run_id: 134710
+  72:
+    blank:
+      frame: 17290
+      run_id: 135301
+    low_confidence:
+      frame: 16088
+      run_id: 135391
+    success:
+      frame: 15558
+      run_id: 136060
+  73:
+    blank:
+      frame: 18349
+      run_id: 136858
+    low_confidence:
+      frame: 14681
+      run_id: 135352
+    success:
+      frame: 17593
+      run_id: 136123
+  74:
+    blank:
+      frame: 23989
+      run_id: 134716
+    low_confidence:
+      frame: 17388
+      run_id: 134470
+    success:
+      frame: 15006
+      run_id: 135352
+  75:
+    blank:
+      frame: 25199
+      run_id: 136906
+    low_confidence:
+      frame: 19197
+      run_id: 134671
+    success:
+      frame: 15172
+      run_id: 136987
+  76:
+    blank:
+      frame: 15446
+      run_id: 137344
+    low_confidence:
+      frame: 16587
+      run_id: 134623
+    success:
+      frame: 19632
+      run_id: 136984
+  77:
+    blank:
+      frame: 24249
+      run_id: 134716
+    low_confidence:
+      frame: 15656
+      run_id: 135352
+    success:
+      frame: 19807
+      run_id: 136780
+  78:
+    blank:
+      frame: 18532
+      run_id: 135274
+    low_confidence:
+      frame: 15916
+      run_id: 135352
+    success:
+      frame: 18158
+      run_id: 136144
+  79:
+    blank:
+      frame: 9985
+      run_id: 135955
+    low_confidence:
+      frame: 18224
+      run_id: 136144
+    success:
+      frame: 9373
+      run_id: 136516
+  80:
+    blank:
+      frame: 429
+      run_id: 135199
+    low_confidence:
+      frame: 11684
+      run_id: 134716
+    success:
+      frame: 11538
+      run_id: 134470
+  81:
+    blank:
+      frame: 13557
+      run_id: 135199
+    low_confidence:
+      frame: 18808
+      run_id: 136144
+    success:
+      frame: 13559
+      run_id: 135199
+  82:
+    blank:
+      frame: 394
+      run_id: 136285
+    low_confidence:
+      frame: 12269
+      run_id: 135385
+    success:
+      frame: 32159
+      run_id: 134710
+  83:
+    blank:
+      frame: 16493
+      run_id: 134614
+    low_confidence:
+      frame: 21239
+      run_id: 136780
+    success:
+      frame: 24077
+      run_id: 134584
+  84:
+    blank:
+      frame: 27151
+      run_id: 136906
+    low_confidence:
+      frame: 23233
+      run_id: 136354
+    success:
+      frame: 21822
+      run_id: 136984
+  85:
+    blank:
+      frame: 13160
+      run_id: 136060
+    low_confidence:
+      frame: 23629
+      run_id: 134584
+    success:
+      frame: 16328
+      run_id: 135955
+  86:
+    blank:
+      frame: 21103
+      run_id: 136123
+    low_confidence:
+      frame: 11499
+      run_id: 134146
+    success:
+      frame: 16431
+      run_id: 137353
+  87:
+    blank:
+      frame: 11842
+      run_id: 136981
+    low_confidence:
+      frame: 14305
+      run_id: 135385
+    success:
+      frame: 21556
+      run_id: 136780
+  88:
+    blank:
+      frame: 19978
+      run_id: 136144
+    low_confidence:
+      frame: 14488
+      run_id: 135391
+    success:
+      frame: 17160
+      run_id: 134671
+  89:
+    blank:
+      frame: 12931
+      run_id: 137344
+    low_confidence:
+      frame: 14348
+      run_id: 135385
+    success:
+      frame: 17196
+      run_id: 135955
+  90:
+    blank:
+      frame: 14999
+      run_id: 134623
+    low_confidence:
+      frame: 24683
+      run_id: 134584
+    success:
+      frame: 24712
+      run_id: 136519
+  91:
+    blank:
+      frame: 20999
+      run_id: 135670
+    low_confidence:
+      frame: 20492
+      run_id: 134710
+    success:
+      frame: 18828
+      run_id: 136987
+  92:
+    blank:
+      frame: 31084
+      run_id: 135385
+    low_confidence:
+      frame: 13694
+      run_id: 136285
+    success:
+      frame: 7585
+      run_id: 136285
+  93:
+    blank:
+      frame: 22492
+      run_id: 136780
+    low_confidence:
+      frame: 1227
+      run_id: 135955
+    success:
+      frame: 28048
+      run_id: 134623
+  94:
+    blank:
+      frame: 15778
+      run_id: 136858
+    low_confidence:
+      frame: 10573
+      run_id: 134146
+    success:
+      frame: 10678
+      run_id: 134146
+  95:
+    blank:
+      frame: 11659
+      run_id: 135352
+    low_confidence:
+      frame: 21562
+      run_id: 136285
+    success:
+      frame: 28768
+      run_id: 136906
+  96:
+    blank:
+      frame: 4288
+      run_id: 134671
+    low_confidence:
+      frame: 6360
+      run_id: 134584
+    success:
+      frame: 10073
+      run_id: 134614
+  97:
+    blank:
+      frame: 21189
+      run_id: 134710
+    low_confidence:
+      frame: 11950
+      run_id: 135391
+    success:
+      frame: 29329
+      run_id: 136906
+  98:
+    blank:
+      frame: 14660
+      run_id: 136858
+    low_confidence:
+      frame: 18561
+      run_id: 136930
+    success:
+      frame: 23764
+      run_id: 136984
+  99:
+    blank:
+      frame: 18878
+      run_id: 136930
+    low_confidence:
+      frame: 17663
+      run_id: 134716
+    success:
+      frame: 17383
+      run_id: 136516
+  100:
+    blank:
+      frame: 3690
+      run_id: 136516
+    low_confidence:
+      frame: 18020
+      run_id: 134716
+    success:
+      frame: 23088
+      run_id: 134470
+  101:
+    blank:
+      frame: 18497
+      run_id: 134716
+    low_confidence:
+      frame: 9724
+      run_id: 134797
+    success:
+      frame: 30096
+      run_id: 136906
+  102:
+    blank:
+      frame: 26175
+      run_id: 137353
+    low_confidence:
+      frame: 23988
+      run_id: 134623
+    success:
+      frame: 23581
+      run_id: 136780
+  103:
+    blank:
+      frame: 11011
+      run_id: 135199
+    low_confidence:
+      frame: 22408
+      run_id: 136285
+    success:
+      frame: 13346
+      run_id: 137353
+  104:
+    blank:
+      frame: 26710
+      run_id: 135241
+    low_confidence:
+      frame: 27369
+      run_id: 136285
+    success:
+      frame: 3295
+      run_id: 137299
+  105:
+    blank:
+      frame: 27624
+      run_id: 136354
+    low_confidence:
+      frame: 9180
+      run_id: 135352
+    success:
+      frame: 12983
+      run_id: 134671
+  106:
+    blank:
+      frame: 9858
+      run_id: 136060
+    low_confidence:
+      frame: 28502
+      run_id: 136894
+    success:
+      frame: 21303
+      run_id: 136987
+  107:
+    blank:
+      frame: 24315
+      run_id: 136285
+    low_confidence:
+      frame: 9180
+      run_id: 135352
+    success:
+      frame: 20265
+      run_id: 134614
+  108:
+    blank:
+      frame: 9781
+      run_id: 135715
+    low_confidence:
+      frame: 2941
+      run_id: 135241
+    success:
+      frame: 16141
+      run_id: 135955
+  109:
+    blank:
+      frame: 29179
+      run_id: 136894
+    low_confidence:
+      frame: 24685
+      run_id: 135715
+    success:
+      frame: 9738
+      run_id: 135199
+  110:
+    blank:
+      frame: 7780
+      run_id: 134797
+    low_confidence:
+      frame: 28069
+      run_id: 136519
+    success:
+      frame: 12032
+      run_id: 137299
+  111:
+    blank:
+      frame: 8448
+      run_id: 136060
+    low_confidence:
+      frame: 24451
+      run_id: 135670
+    success:
+      frame: 8536
+      run_id: 135385
+  112:
+    blank:
+      frame: 7210
+      run_id: 136981
+    low_confidence:
+      frame: 8590
+      run_id: 135385
+    success:
+      frame: 9661
+      run_id: 135769
+  113:
+    blank:
+      frame: 20874
+      run_id: 136930
+    low_confidence:
+      frame: 7959
+      run_id: 135352
+    success:
+      frame: 28693
+      run_id: 136519
+  114:
+    blank:
+      frame: 28476
+      run_id: 134584
+    low_confidence:
+      frame: 8149
+      run_id: 135352
+    success:
+      frame: 9985
+      run_id: 135769
+  115:
+    blank:
+      frame: 23226
+      run_id: 134710
+    low_confidence:
+      frame: 11304
+      run_id: 134671
+    success:
+      frame: 10121
+      run_id: 135769
+  116:
+    blank:
+      frame: 570
+      run_id: 135385
+    low_confidence:
+      frame: 34375
+      run_id: 135391
+    success:
+      frame: 21194
+      run_id: 137299
+  117:
+    blank:
+      frame: 25960
+      run_id: 136285
+    low_confidence:
+      frame: 21093
+      run_id: 135955
+    success:
+      frame: 24633
+      run_id: 134710
+  118:
+    blank:
+      frame: 22319
+      run_id: 134614
+    low_confidence:
+      frame: 12399
+      run_id: 134716
+    success:
+      frame: 21626
+      run_id: 136930
+  119:
+    blank:
+      frame: 6348
+      run_id: 135199
+    low_confidence:
+      frame: 26784
+      run_id: 136285
+    success:
+      frame: 10132
+      run_id: 134671
+  120:
+    blank:
+      frame: 25090
+      run_id: 136144
+    success:
+      frame: 11564
+      run_id: 136858
+  121:
+    blank:
+      frame: 7582
+      run_id: 134623
+    low_confidence:
+      frame: 21424
+      run_id: 135955
+    success:
+      frame: 9564
+      run_id: 137353
+  122:
+    blank:
+      frame: 23230
+      run_id: 134614
+    low_confidence:
+      frame: 30004
+      run_id: 134584
+    success:
+      frame: 7191
+      run_id: 135391
+  123:
+    blank:
+      frame: 31779
+      run_id: 136894
+    low_confidence:
+      frame: 23425
+      run_id: 134614
+    success:
+      frame: 8625
+      run_id: 135769
+  124:
+    blank:
+      frame: 37439
+      run_id: 135199
+    low_confidence:
+      frame: 23145
+      run_id: 134710
+    success:
+      frame: 31127
+      run_id: 135274
+  125:
+    blank:
+      frame: 561
+      run_id: 136285
+    low_confidence:
+      frame: 594
+      run_id: 135301
+    success:
+      frame: 4723
+      run_id: 137353
+  126:
+    blank:
+      frame: 5994
+      run_id: 134671
+    low_confidence:
+      frame: 7930
+      run_id: 134716
+    success:
+      frame: 2018
+      run_id: 137344
+  127:
+    blank:
+      frame: 28840
+      run_id: 136123
+    low_confidence:
+      frame: 24293
+      run_id: 134614
+    success:
+      frame: 25721
+      run_id: 136987
+  128:
+    blank:
+      frame: 4577
+      run_id: 134623
+    low_confidence:
+      frame: 7248
+      run_id: 136858
+    success:
+      frame: 4007
+      run_id: 135352
+  129:
+    blank:
+      frame: 28142
+      run_id: 135670
+    low_confidence:
+      frame: 2899
+      run_id: 135352
+    success:
+      frame: 23897
+      run_id: 135955
+  130:
+    blank:
+      frame: 4055
+      run_id: 135385
+    low_confidence:
+      frame: 23803
+      run_id: 136930
+    success:
+      frame: 3452
+      run_id: 135199
+  131:
+    blank:
+      frame: 32942
+      run_id: 136519
+    low_confidence:
+      frame: 3404
+      run_id: 135352
+    success:
+      frame: 36914
+      run_id: 136906
+  132:
+    blank:
+      frame: 6643
+      run_id: 134671
+    low_confidence:
+      frame: 26496
+      run_id: 135343
+    success:
+      frame: 2358
+      run_id: 136981
+  133:
+    blank:
+      frame: 3116
+      run_id: 135385
+    low_confidence:
+      frame: 25557
+      run_id: 135343
+    success:
+      frame: 30685
+      run_id: 136984
+  134:
+    blank:
+      frame: 30503
+      run_id: 136123
+    low_confidence:
+      frame: 30647
+      run_id: 136123
+    success:
+      frame: 2680
+      run_id: 135391
+  135:
+    blank:
+      frame: 9053
+      run_id: 136858
+    low_confidence:
+      frame: 28301
+      run_id: 135343
+    success:
+      frame: 28373
+      run_id: 135343
+  136:
+    blank:
+      frame: 31165
+      run_id: 136987
+    low_confidence:
+      frame: 2011
+      run_id: 134797
+    success:
+      frame: 29372
+      run_id: 134710
+  137:
+    blank:
+      frame: 867
+      run_id: 135352
+    low_confidence:
+      frame: 28661
+      run_id: 135343
+    success:
+      frame: 30768
+      run_id: 135670
+  138:
+    blank:
+      frame: 1935
+      run_id: 134146
+    low_confidence:
+      frame: 2122
+      run_id: 135385
+    success:
+      frame: 29890
+      run_id: 134710
+  139:
+    blank:
+      frame: 562
+      run_id: 135352
+    low_confidence:
+      frame: 1988
+      run_id: 135385
+    success:
+      frame: 29086
+      run_id: 136144
+  140:
+    blank:
+      frame: 13379
+      run_id: 137344
+    low_confidence:
+      frame: 27163
+      run_id: 136780
+    success:
+      frame: 34471
+      run_id: 134623
+  141:
+    blank:
+      frame: 675
+      run_id: 135391
+    low_confidence:
+      frame: 26652
+      run_id: 136930
+    success:
+      frame: 29891
+      run_id: 136144
+  142:
+    blank:
+      frame: 23870
+      run_id: 136894
+    low_confidence:
+      frame: 14653
+      run_id: 134146
+    success:
+      frame: 29978
+      run_id: 135343
+  143:
+    blank:
+      frame: 28440
+      run_id: 136516
+    low_confidence:
+      frame: 722
+      run_id: 136123
+    success:
+      frame: 1179
+      run_id: 136123
+  144:
+    blank:
+      frame: 3813
+      run_id: 136522
+    low_confidence:
+      frame: 30920
+      run_id: 135343
+    success:
+      frame: 35640
+      run_id: 135391
+  145:
+    blank:
+      frame: 471
+      run_id: 135385
+    low_confidence:
+      frame: 32915
+      run_id: 136123
+    success:
+      frame: 4299
+      run_id: 137299
+  146:
+    blank:
+      frame: 25449
+      run_id: 134584
+    low_confidence:
+      frame: 17740
+      run_id: 136516
+    success:
+      frame: 10609
+      run_id: 136123
+  147:
+    blank:
+      frame: 2012
+      run_id: 134623
+    low_confidence:
+      frame: 499
+      run_id: 134470
+    success:
+      frame: 5733
+      run_id: 136894
+  148:
+    blank:
+      frame: 1801
+      run_id: 136906
+    low_confidence:
+      frame: 36416
+      run_id: 137344
+    success:
+      frame: 3379
+      run_id: 135301
+  149:
+    blank:
+      frame: 3976
+      run_id: 134671
+    low_confidence:
+      frame: 35509
+      run_id: 136060
+    success:
+      frame: 31347
+      run_id: 136144
+  150:
+    blank:
+      frame: 31913
+      run_id: 134710
+    low_confidence:
+      frame: 1674
+      run_id: 134584
+    success:
+      frame: 27576
+      run_id: 136930
+  151:
+    blank:
+      frame: 35753
+      run_id: 136060
+    low_confidence:
+      frame: 36717
+      run_id: 137344
+    success:
+      frame: 4214
+      run_id: 134671
+  152:
+    blank:
+      frame: 1800
+      run_id: 135301
+    low_confidence:
+      frame: 1744
+      run_id: 136285
+    success:
+      frame: 17308
+      run_id: 136894
+  153:
+    blank:
+      frame: 1890
+      run_id: 136894
+    low_confidence:
+      frame: 37420
+      run_id: 134470
+    success:
+      frame: 28299
+      run_id: 136516
+  154:
+    blank:
+      frame: 29200
+      run_id: 134614
+    low_confidence:
+      frame: 2494
+      run_id: 136906
+    success:
+      frame: 26224
+      run_id: 136516
+  155:
+    blank:
+      frame: 34186
+      run_id: 137344
+    low_confidence:
+      frame: 2364
+      run_id: 136522
+    success:
+      frame: 34461
+      run_id: 136123
+  156:
+    blank:
+      frame: 32564
+      run_id: 135670
+    low_confidence:
+      frame: 438
+      run_id: 134584
+    success:
+      frame: 7217
+      run_id: 136516
+  157:
+    blank:
+      frame: 560
+      run_id: 136522
+    low_confidence:
+      frame: 3753
+      run_id: 136906
+    success:
+      frame: 32364
+      run_id: 136894
+  158:
+    blank:
+      frame: 2957
+      run_id: 136894
+    low_confidence:
+      frame: 2970
+      run_id: 136780
+    success:
+      frame: 32393
+      run_id: 136987
+  159:
+    blank:
+      frame: 3069
+      run_id: 136780
+    low_confidence:
+      frame: 29199
+      run_id: 136930
+    success:
+      frame: 3779
+      run_id: 135715
+  160:
+    blank:
+      frame: 32607
+      run_id: 136987
+    low_confidence:
+      frame: 3191
+      run_id: 136780
+    success:
+      frame: 2131
+      run_id: 136519
+  161:
+    blank:
+      frame: 33382
+      run_id: 137344
+    low_confidence:
+      frame: 4705
+      run_id: 135715
+    success:
+      frame: 34241
+      run_id: 134623
+  162:
+    blank:
+      frame: 30722
+      run_id: 134614
+    low_confidence:
+      frame: 36105
+      run_id: 136123
+    success:
+      frame: 32849
+      run_id: 137344
+  163:
+    blank:
+      frame: 1828
+      run_id: 135670
+    low_confidence:
+      frame: 4740
+      run_id: 134584
+    success:
+      frame: 4865
+      run_id: 134584
+  164:
+    blank:
+      frame: 30720
+      run_id: 134614
+    low_confidence:
+      frame: 1440
+      run_id: 134671
+    success:
+      frame: 1974
+      run_id: 135670
+  165:
+    blank:
+      frame: 27675
+      run_id: 136516
+    low_confidence:
+      frame: 33623
+      run_id: 134623
+    success:
+      frame: 29571
+      run_id: 135955
+  166:
+    blank:
+      frame: 36675
+      run_id: 136123
+    low_confidence:
+      frame: 28122
+      run_id: 134146
+    success:
+      frame: 27946
+      run_id: 134797
+  167:
+    blank:
+      frame: 2996
+      run_id: 136144
+    low_confidence:
+      frame: 39923
+      run_id: 134470
+    success:
+      frame: 32617
+      run_id: 135352
+  168:
+    blank:
+      frame: 422
+      run_id: 136522
+    low_confidence:
+      frame: 15118
+      run_id: 134797
+    success:
+      frame: 15946
+      run_id: 134671
+task_name: latin_square_01
