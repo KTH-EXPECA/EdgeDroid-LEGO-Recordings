@@ -1,10 +1,12 @@
+import random
 import tarfile
+from collections import deque
 from contextlib import closing
 from dataclasses import dataclass
 from io import BytesIO
 from os import PathLike
 from pathlib import Path
-from typing import Optional
+from typing import Collection, Optional
 
 import click
 import pandas as pd
@@ -15,11 +17,11 @@ from dataclasses_json import dataclass_json
 def copy_frame_to_tar(
         frame_index: int,
         frame_tag: str,
-        frame_dir: Path,
+        frame_dir: PathLike,
         tar_file: tarfile.TarFile,
         frame_step: Optional[int] = None
 ) -> None:
-    frame_file = (frame_dir / f'frame_{frame_index:d}.jpeg')
+    frame_file = (Path(frame_dir) / f'frame_{frame_index:d}.jpeg').resolve()
 
     if frame_step is not None:
         tar_path = f'step_{frame_step:02d}/{frame_tag.lower()}.jpeg'
@@ -40,41 +42,40 @@ class Metadata:
 
 
 @click.command()
-@click.argument('frame-dir', type=click.Path(file_okay=False,
-                                             dir_okay=True,
-                                             exists=True))
 @click.argument('output-file', type=click.Path(file_okay=True,
                                                dir_okay=False,
                                                exists=False))
+@click.argument('num-steps', type=int)
+@click.argument('frame-dirs', nargs=-1, type=click.Path(file_okay=False,
+                                                        dir_okay=True,
+                                                        exists=True))
 @click.option('--task-name', type=str, default='latinsqr0', show_default=True)
-def process_frames(frame_dir: PathLike,
-                   output_file: PathLike,
+def process_frames(output_file: PathLike,
+                   num_steps: int,
+                   frame_dirs: Collection[PathLike],
                    task_name: str) -> None:
-    # open csv file with frame data
-    frame_dir = Path(frame_dir).resolve()
-    frame_data = pd.read_csv(frame_dir / 'frames.csv',
-                             index_col='seq',
-                             dtype={'result': 'category'},
-                             infer_datetime_format=True,
-                             parse_dates=['submitted', 'processed', 'returned'])
-    step_data = pd.read_csv(frame_dir / 'steps.csv',
-                            index_col='abs_seq',
-                            infer_datetime_format=True,
-                            parse_dates=['start', 'end'])
+    frame_options = deque()
+    initial_frames = deque()
+    for frame_dir in frame_dirs:
+        # open csv file with frame data
+        frame_dir = Path(frame_dir).resolve()
+        frame_data = pd.read_csv(frame_dir / 'frames.csv',
+                                 index_col='seq',
+                                 dtype={'result': 'category'},
+                                 infer_datetime_format=True,
+                                 parse_dates=['submitted', 'processed',
+                                              'returned'])
 
-    with tarfile.open(output_file, 'w:gz') as tfile:
+        step_data = pd.read_csv(frame_dir / 'steps.csv',
+                                index_col='abs_seq',
+                                infer_datetime_format=True,
+                                parse_dates=['start', 'end'])
 
-        # initial frame corresponds to first "success" in frame_data
         init_frame = frame_data.loc[
             frame_data['result'].str.lower() == 'success'
             ].index[0]
 
-        copy_frame_to_tar(
-            frame_index=init_frame,
-            frame_tag='initial',
-            frame_dir=frame_dir,
-            tar_file=tfile
-        )
+        initial_frames.append((init_frame, frame_dir))
 
         for step in step_data.itertuples(name='Step', index=True):
             # find all frames in step
@@ -88,35 +89,31 @@ def process_frames(frame_dir: PathLike,
                 frame_data['returned'] == step.end,
             ].index[0]
 
-            copy_frame_to_tar(
-                frame_index=success_frame,
-                frame_tag='success',
-                frame_dir=frame_dir,
-                frame_step=step.Index,
-                tar_file=tfile
-            )
+            frame_options.append({
+                'tag'        : 'success',
+                'frame_index': success_frame,
+                'frame_dir'  : frame_dir,
+                'step'       : step.Index
+            })
 
-            # sample the remaining categories
-            step_frames = step_frames.loc[
+            # rest of frames
+            for frame in step_frames.loc[
                 step_frames['result'].str.lower() != 'success'
-                ].copy()
-            step_frames['result'] = \
-                step_frames['result'].cat.remove_unused_categories()
+            ].itertuples(name='Frame', index=True):
+                frame_options.append({
+                    'tag'        : frame.result.lower(),
+                    'frame_index': frame.Index,
+                    'frame_dir'  : frame_dir,
+                    'step'       : step.Index
+                })
 
-            sampled_frames = step_frames.groupby('result').sample(1)
-            for frame in sampled_frames.itertuples(name='Frame', index=True):
-                copy_frame_to_tar(
-                    frame_index=frame.Index,
-                    frame_tag=frame.result.lower(),
-                    frame_dir=frame_dir,
-                    frame_step=step.Index,
-                    tar_file=tfile
-                )
+    frames = pd.DataFrame(frame_options)
 
+    with tarfile.open(output_file, 'w:gz') as tfile:
         # write metadata
         metadata = Metadata(
             task_name=task_name,
-            num_steps=len(step_data.index)
+            num_steps=num_steps
         )
 
         mdata_bytes = yaml.safe_dump(metadata.to_dict()).encode('utf8')
@@ -126,7 +123,31 @@ def process_frames(frame_dir: PathLike,
         with closing(BytesIO(mdata_bytes)) as fp:
             tfile.addfile(tarinfo=tinfo, fileobj=fp)
 
-        # done
+        # write frames to tarfile
+        # initial frame
+        init_frame, frame_dir = random.choice(initial_frames)
+        copy_frame_to_tar(
+            frame_index=init_frame,
+            frame_tag='initial',
+            frame_dir=frame_dir,
+            tar_file=tfile
+        )
+
+        # rest of frames
+        for step in range(num_steps):
+            # find corresponding frames
+            step_frames = frames.loc[frames['step'] == step]
+
+            # one frame per tag type
+            for frame in step_frames.groupby('tag').sample(1) \
+                    .itertuples(index=True):
+                copy_frame_to_tar(
+                    frame_index=frame.frame_index,
+                    frame_tag=frame.tag,
+                    frame_dir=frame.frame_dir,
+                    frame_step=step,
+                    tar_file=tfile
+                )
 
 
 if __name__ == '__main__':
