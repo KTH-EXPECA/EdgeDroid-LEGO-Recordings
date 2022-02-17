@@ -1,0 +1,3 @@
+[submodule "exp_data"]
+	path = exp_data
+	url = git@gits-15.sys.kth.se:mojom/CA_experiments_processed_data.git
