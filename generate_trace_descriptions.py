@@ -6,12 +6,15 @@ import pandas as pd
 import yaml
 
 if __name__ == '__main__':
+    step_independent_tags = ('blank', 'low_confidence')
+
     sqr_mappings = pd.read_csv('latinsqr_mappings.csv',
                                index_col='run_id')
     sqr_mappings = sqr_mappings['latin_sqr_nr'].to_dict()
 
-    frame_data = deque()
+    success_frames = deque()
     initial_frames = deque()
+    ind_frames = deque()
     for run_id in sqr_mappings.keys():
         # TODO: initial
 
@@ -48,7 +51,16 @@ if __name__ == '__main__':
             'frame' : int(init_frame)
         })
 
+        # save state independent frames
+        ind_frames.append(
+            frames.loc[
+                np.isin(frames['result'].str.lower(), step_independent_tags)
+            ].copy()
+        )
+
         for step in run_steps.itertuples(name='Step'):
+            # find the success frame of each step
+
             # find all frames in each step
             step_frames = frames.loc[
                 (frames['submitted'] >= step.start) &
@@ -63,21 +75,23 @@ if __name__ == '__main__':
                 ]
 
             assert len(success) == 1
+            success_frames.append(success)
 
             # all other frames
-            other: pd.DataFrame = step_frames.loc[
-                step_frames['result'].str.lower() != 'success'
-                ]
+            # other: pd.DataFrame = step_frames.loc[
+            #     step_frames['result'].str.lower() != 'success'
+            #     ]
 
-            df = step_frames.loc[other.index.union(success.index)].copy()
-            df = df[['run_id', 'step_seq', 'seq', 'result', 'square']]
+            # df = step_frames.loc[other.index.union(success.index)].copy()
+            # df = df[['run_id', 'step_seq', 'seq', 'result', 'square']]
+            #
+            # frame_data.append(df)
 
-            frame_data.append(df)
-
-    frame_data = pd.concat(frame_data, ignore_index=True)
+    success_frames = pd.concat(success_frames, ignore_index=True)
+    ind_frames = pd.concat(ind_frames, ignore_index=True)
 
     # find equivalent steps in latinsqrs
-    # stores mapping from step state -> frames
+    # stores mapping from step state -> success frames
     states: Dict[str, pd.DataFrame] = defaultdict(pd.DataFrame)
     latin_squares = deque()
 
@@ -85,15 +99,15 @@ if __name__ == '__main__':
         latin_sqr = pd.read_csv(f'./tasks/latin_sqr_{i:d}.csv')
         latin_squares.append(latin_sqr)
         for step in latin_sqr.itertuples(index=True, name='Step'):
-            # find all frames for this square, step
-            frames = frame_data.loc[
-                (frame_data['step_seq'] == step.Index) &
-                (frame_data['square'] == i)
+            # find success frame for this square, step
+            step_frames = success_frames.loc[
+                (success_frames['step_seq'] == step.Index) &
+                (success_frames['square'] == i)
                 ]
 
             # concatenate frames into dict
             states[step.state] = pd.concat(
-                (states[step.state], frames)
+                (states[step.state], step_frames)
             )
 
     for i, square in enumerate(latin_squares):
@@ -105,8 +119,12 @@ if __name__ == '__main__':
         }
 
         for step in square.itertuples(index=True, name='Step'):
-            # find possible frames for step
-            frames = states[step.state]
+            # find possible success frames for step
+            step_success_frames = states[step.state]
+
+            # for state independent tags we sample the whole collection
+            frames = pd.concat((step_success_frames, ind_frames),
+                               ignore_index=True)
 
             # sample frames
             sampled_frames = frames.groupby('result').sample(1)
@@ -120,6 +138,11 @@ if __name__ == '__main__':
             }
 
         trace['num_steps'] = len(trace['steps'])
+
+        # verify trace
+        for step in range(trace['num_steps']):
+            for tag in ['success'] + list(step_independent_tags):
+                assert tag in trace['steps'][step]
 
         # output trace
         with open(f'descriptions/latin_square_{i:02d}.yml', 'w') as fp:
