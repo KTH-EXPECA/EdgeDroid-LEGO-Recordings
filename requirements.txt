@@ -3,3 +3,12 @@ click
 dataclasses-json
 pyyaml
 pandas
+git+https://github.com/molguin92/gabriel-lego-py3@master#egg=gabriel_lego
+jupyter
+notebook
+jupyterlab
+matplotlib
+numpy
+tqdm
+seaborn
+
