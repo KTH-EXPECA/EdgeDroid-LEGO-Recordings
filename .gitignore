@@ -417,3 +417,6 @@ $RECYCLE.BIN/
 
 # dont version videos
 *.avi
+
+# dont version traces (upload as binaries to GitHub releases instead!)
+*.npz
